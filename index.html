@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="mainpart">
+             <div class="menu">
+                <div class="header">
+           <h1 class="tittle">Computer Science</h1>
+            <div>
+              <img class="image1"  src="./images/Js.png">
+            </div>
+         </div>
+          <div class="mainbar">
+            <a class="extrainfo" href="#">Shop</a>
+             <a class="extrainfo" href="#">About us</a>
+             </div>
+             </div>
+              <div class="maininfo">
+                 <div class="centraltext">
+               <h2 class="secondtittle">Computer Science is incredible</h2>
+                 <p>This is a programming lovers page, programming is considered hard and mysterious but it is incredible, almost everything you use has programming, every video game you play every app you use and even your Iphone opperative system.  </p>
+               </div>
+             <div class="firstimage">
+               <img class="mainimage" src="./images/js.png">
+              </div>
+            </div>
+        <div>
+           <h1>Programming Languages </h1>
+            </div>
+        <div class="container2">
+         
+          <div class="contentinfo">
+               <div class="fungae">  
+                  <img class="image" src="./images/Js.png">
+                 <p>JavaScript is a programming language used to create webpages such as this one. </p>
+                 </div>
+                <div class="fungae">
+                 <img  class="image" src="./images/python.jpg">
+                 <p>Lentinus edodes: Python is a programming language used to create apps and to do math algorithms to solve various problems it is also used for webpages back end. </p>
+               </div>
+                 <div class="fungae">
+                     <img class="image" src="./images/c++.png">
+                     <p>C++ is a programming language used literaly for everything, it is used for developing apps, videogames analytical software and anything you can imagine, however is a really complicate language and can damage your pc if you make a mistake. </p>
+                   </div>
+                  <div class="fungae">
+                     <img class="image" src="./images/R.png">
+                     <p> R is a programming language used for statistics to analize huge amount of numbers and solve economical problems. </p>
+                   </div>
+                   </div>
+          </div>
+         </div>
+          <div class="quotecontainer">
+           <div class="quote"> <i>" I'm not afraid of computers; What I fear is running out of them". </i> <strong>Mark Zuckenberg</strong></i></div>
+         </div>
+          <div class="calltoactioncontainer">
+           <div class="calltoaction"> <strong> It's time! start programing and learning more about this beautiful world.</strong>
+          <p> Signup here for free to the group of programmers, it is between our hands to create software and change this world.</p>
+            <button class="button">Sign Up</button>
+         </div>
+         </div>
+          <div class="creditscontainer">
+            <div class="credits">  <strong>Made by Daniel Ospina</strong></div>
+         </div>
+     </div>
+    </div>
+ </div>
+ </div>
+ <script>
+ 
+    function binarySearch(arr, target) {
+        let left = 0;
+        let right = arr.length - 1;
+        while (left <= right) {
+            let middle = Math.floor((left + right) / 2);
+            if (arr[middle] === target) {
+                return middle;
+            } else if (arr[middle] < target) {
+                left = middle + 1;
+            } else {
+                right = middle - 1;
+            }
+        }
+        return -1;
+    }
+    
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let target = 7;
+    console.log(binarySearch(arr, target));
+        </script>
+</body>
+</html>
